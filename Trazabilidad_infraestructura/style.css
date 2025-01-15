@@ -106,7 +106,7 @@ html {
 
 .logo-comp {
   margin-top: 2rem;
-  position: absolute; /* Fija el logo a la izquierda sin afectar el flujo */
+  position:absolute; /* Fija el logo a la izquierda sin afectar el flujo */
   left: 0;
   top: 50%; /* Centra verticalmente el logo */
   transform: translateY(-50%);
@@ -574,6 +574,25 @@ html {
   }
   .featured-users > div {
     margin: unset;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 1600px) {
+  .logo-comp {
+      display: none; /* Oculta el logo en pantallas pequeñas */
+    }
+
+  .titulos h1 {
+      font-size: 1.2rem; /* Ajusta el tamaño del título */
+  }
+
+  .titulos p {
+      font-size: 0.9rem; /* Ajusta el tamaño del subtítulo */
+  }
+
+  .ui-row-1 {
+      justify-content: center; /* Centra los títulos al ocupar todo el ancho */
   }
 }
 

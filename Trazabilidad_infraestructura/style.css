@@ -56,11 +56,8 @@ html {
   }
   
   .logo-sf {
-    width: auto;
-    height: 10rem; /* Ajusta la altura según el tamaño deseado */
-    max-width: 100%; /* Asegura que la imagen no se estire más de su tamaño original */
-    display: block; /* Evita que aparezca espacio extra debajo de la imagen */
-    margin: 0 auto; /* Centra la imagen si es necesario */
+    height: 5rem; /* Ajusta la altura del logo */
+    max-width: 100%;
   }
   
   .dashboard-river {
@@ -99,27 +96,20 @@ html {
     max-width: 1600px; /* Opcional: Ajusta el tamaño máximo del dashboard */
   }
 
-.ui-row-1 {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  padding: 35px 30px 25px 30px;
+  .ui-row-1 {
+    position: relative; /* Permite posicionar los títulos de forma absoluta */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .logo-comp {
-  position: relative;
-  left: 12px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  transition: all 0.4s ease-in-out;
+  margin-top: 2rem;
+  position: absolute; /* Fija el logo a la izquierda sin afectar el flujo */
+  left: 0;
+  top: 50%; /* Centra verticalmente el logo */
+  transform: translateY(-50%);
 }
 
 .logo-comp:hover {
@@ -145,15 +135,16 @@ html {
 
 .logo-comp h1 {
     font-family: "Roboto";
+    position: relative;
     letter-spacing: 0px;
     font-size: 26pt;
     margin: 0;
     align-content: center;
     align-items: center;
-    margin-left: 8rem;
+    margin-left: 12rem;
     margin-top: 4rem;
     padding: 0;
-    color: rgb(1, 41, 18);
+    color: rgb(0, 10, 65);
     transition: all 0.4s ease-in-out;
   }
 
@@ -165,9 +156,9 @@ html {
   align-content: center;
   align-items: center;
   margin-top: 1rem;
-  margin-left: 8rem;
+  margin-left: 12rem;
   padding: 0;
-  color: rgb(1, 41, 18);
+  color: rgb(2, 0, 92);
   transition: all 0.4s ease-in-out;
 }
 
@@ -813,17 +804,35 @@ html {
 }
 
 .logo-sf {
-  width: auto;
-  height: 7rem; /* Ajusta la altura según el tamaño deseado */
-  max-width: 100%; /* Asegura que la imagen no se estire más de su tamaño original */
-  display: block; /* Evita que aparezca espacio extra debajo de la imagen */
-  margin: 0 auto; /* Centra la imagen si es necesario */
+  height: 7rem; /* Ajusta la altura del logo */
+  max-width: 100%;
+  width: 7rem;
+  margin-left: 5rem;
 }
 
 .titulos {
-  padding: 0px 3rem 0rem 3rem;
+  margin-top: 3rem;
+  text-align: center;
+  position: relative; /* Asegura que los títulos estén centrados */
+  width: 100%;
 }
 
+.titulos h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: rgb(0, 10, 65);
+}
+
+.titulos p {
+  margin: 0;
+  font-size: 1rem;
+  color: rgb(2, 0, 92);
+}
+
+.titulos h2{
+  align-items: center;
+  padding: 0px 2rem 0rem 0rem;
+}
 .sidebar-hidden {
     transform: translateX(-100%);
 }
